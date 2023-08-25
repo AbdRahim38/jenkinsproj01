@@ -80,12 +80,13 @@
               </goals>
             </execution>
             <execution>
-              <id>jacoco-report</id>
+              <id>report</id>
        	      <phase>test</phase>
               <goals>
                 <goal>report</goal>
               </goals>
-              <!-- default target/jscoco/site/* -->
+	      <!-- default target/jacoco/site/* -->
+	      <!--
               <configuration>
                 <outputDirectory>target/jacoco-report</outputDirectory>
                 <dataFile>${project.build.directory}/coverage-reports/jacoco.exec</dataFile>
@@ -97,7 +98,8 @@
                     </excludes>
                   </rule>
                 </rules>
-	      </configuration>
+	       </configuration>
+	       -->		      
             </execution>
           </executions>
         </plugin>	
